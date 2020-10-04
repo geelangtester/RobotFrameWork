@@ -4,7 +4,6 @@ Resource       ../common/variable.robot
 Resource       credential.txt
 
 *** Keywords ***
-
 #Amazon Login PageObject
 User able open amazon
     go to                             ${url_sign_in_amazon}
@@ -16,7 +15,7 @@ User able input password
     input password                    ${user_password}     ${password}
 
 User able continue
-    Wait and click                      ${continue_button}
+    Wait and click                    ${continue_button}
 
 User submit credential
     Wait and click                      ${submit_Sign_In}

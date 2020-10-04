@@ -47,8 +47,3 @@ User Sign in Amazon
     User able continue
     User able input password
     User submit credential
-
-User Sign Out Amazon from side bar
-    [Tags]  Amazon
-    User able click humberger button
-    User able tap sign out from side bar
