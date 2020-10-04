@@ -1,70 +1,53 @@
 *** Settings ***
 Library        SeleniumLibrary
 Resource       ../common/variable.robot
+Resource       ../common/customKeyword.robot
 
 *** Keywords ***
 User able to visit homepage amazaon
     go to                            ${url_home_amazon}
 
 User able click humberger button
-    click element                    ${humberger_button}
-
-User able scroll in to man fashion
-    scroll element into view         ${scroll_bawah}
+    Wait and click                   ${humberger_button}
 
 User able click man fashion button
-    click element                    ${man_fashion_button}
+    Wait and click                     ${man_fashion_button}
 
 User able click man clothing button
-    click element                    ${man_clothing_button}
+    Wait and click                     ${man_clothing_button}
 
-User able click man shirt button
-     click element                   ${man_shirt_button}
-
-User able click shirt index 2
-     click element                  ${shirt_index_2}
+User able click first item man clothing button
+     Wait and click                    ${man_clothing_first}
 
 User able choose size available
-     click element                  ${select_size}
-     click element                  ${dropdown_indx1}
+     Wait and click                   ${select_size}
+     Wait and click                   ${dropdown_small}
 
 User able add quantity
-    click element                   ${select_amount}
-    click element                   ${select_amount_2}
+    Wait and click                    ${select_amount}
+    Wait and click                    ${select_amount_2}
 
 User able add product to cart
-    click element                   ${add_cart_button}
+    Wait and click                    ${add_cart_button}
 
 User able search women’s sneakers
-    input text                      @{search_field}
-    click element                   ${search_button}
+    Wait and input                   @{search_field}
+    Wait and click                    ${search_button}
 
 User able choose first sneakers
-    click element                   ${sneakers_1}
-    click element                   ${select_size}
-    click element                   ${dropdown_indx1}
+    Wait and click                    ${sneakers_1}
+    Wait and click                    ${select_size}
+    Wait and click                    ${dropdown_size_5}
 
 User able add sneakers to cart
-    click element                   ${select_amount}
-    click element                   ${select_amount_1}
-    click element                   ${add_cart_button}
+    Wait and click                    ${select_amount}
+    Wait and click                    ${select_amount_1}
+    Wait and click                    ${add_cart_button}
 
 User able to open cart and reduce quantity shirt
-    click element                   ${cart}
-    click element                   ${amount_reduce}
-    click element                   ${dropdown}
+    Wait and click                    ${cart}
+    Wait and click                    ${amount_reduce}
+    Wait and click                    ${dropdown}
 
 User able to proceed to checkout
-    click element                   ${check_out}
-
-
-
-
-
-
-
-
-
-
-
-
+    Wait and click                    ${check_out}

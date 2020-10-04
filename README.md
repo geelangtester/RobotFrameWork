@@ -1,5 +1,5 @@
 ======================================
-Technical Test - QA Engineer at Pomona 
+Technical Test - QA Engineer at Pomona
 ======================================
 
 Structure Folder
@@ -7,21 +7,21 @@ Structure Folder
 
 Browser
   Folder that contains web browser driver.
-  
+
   Webdriver available are google chrome, mozilla firefox, edge and internet explorer.
 
 Resource
   Folder that contains resource for running testcase.
-  
-  In resource folder theare are 2 folder common and page object.
+
+  In resource folder There are 2 folder common and page object.
   common folder contain keyword that used in other .robot files.
   Page object folder contain user predefined keyword.
 
 Results
   Folder that contains report after running testcase.
-  
+
   There are 3 files generated after running test cases
-  `log.html` for logging test case execution 
+  `log.html` for logging test case execution
   `output.xml` contain steps that run during execution.
   `report.html` this file reporting results after running testcases.
 Test
@@ -31,7 +31,7 @@ Test
 Testcase
 ========
 
-The Test folder contain test case file ilustrating walktrough user in marketplace amazon.
+The Test folder contain test case file illustrating walkthrough user in marketplace amazon.
 
 `Pomona.robot`
    This robot file containing steps in test cases.
@@ -73,7 +73,7 @@ Add Browser folder to path so robotframework can run browserdriver.
 Running tests
 -------------
 
-1. change directory to Technical Test - QA Engineer at Pomona 
+1. change directory to Technical Test - QA Engineer at Pomona
 
 2. executed with the ``robot`` command in terminal ::
 
@@ -81,6 +81,3 @@ Running tests
    `robot -d Results --variable BROWSER:ff test/Pomona.robot` this command will run testcase in firefox browser
    `robot -d Results --variable BROWSER:edge test/Pomona.robot` this command will run testcase in edge browser
    `robot -d Results --variable BROWSER:ie test/Pomona.robot` this command will run testcase in internet explorer browser
-
-
-   

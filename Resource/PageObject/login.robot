@@ -16,18 +16,10 @@ User able input password
     input password                    ${user_password}     ${password}
 
 User able continue
-    click element                     ${continue_button}
+    Wait and click                      ${continue_button}
 
 User submit credential
-    click element                     ${submit_Sign_In}
+    Wait and click                      ${submit_Sign_In}
 
 User able tap sign out from side bar
-    click element                     ${sign_out_button}
-
-
-
-
-
-
-
-
+    Wait and click                      ${sign_out_button}

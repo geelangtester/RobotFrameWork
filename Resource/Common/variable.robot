@@ -7,7 +7,6 @@ Resource       ../PageObject/login.robot
 #Object Login
 ${url_sign_in_amazon}       https://amazon.com/gp/sign-in.html
 ${url_home_amazon}          https://www.amazon.com/
-${url_ali}                  https://www.aliexpress.com/
 ${continue_button}          css=#continue
 ${login_email}              css=#ap_email
 ${user_password}            css=#ap_password
@@ -16,16 +15,15 @@ ${submit_Sign_In}           css=#signInSubmit
 
 #Object Home page amazon
 ${humberger_button}         css=#nav-hamburger-menu
-${scroll_bawah}             xpath=//ul[@class='hmenu hmenu-visible']
-${man_fashion_button}       xpath=//a[@data-menu-id = '22']
+${man_fashion_button}       xpath=//div[.="Men's Fashion"]
 
 #Object Man Fashion page
-${man_clothing_button}      xpath=//ul[@class='hmenu hmenu-visible hmenu-translateX']//li[3]//a[1]
-${man_shirt_button}         xpath=//div[@class='a-section']//div[1]//ul[1]//li[3]//span[1]//a[1]//span[1]
-${shirt_index_2}            xpath=//span[contains(text(),"Carhartt Men's Workwear Jersey Pocket Long-Sleeve")]
+${man_clothing_button}      xpath=//ul[@class='hmenu hmenu-visible hmenu-translateX']//a[.='Clothing']
+${man_clothing_first}       //span[.="Hanes Men's 5-Pack Sports-Inspired Cool Dri Boxer Brief"]
 ${sign_out_button}          xpath=//div[contains(text(),'Sign In')]
-${select_size}              xpath=//span[@id='dropdown_selected_size_name']//span[@class='a-button-text a-declarative']
-${dropdown_indx1}           css=#native_dropdown_selected_size_name_1
+${select_size}              //span[@id='dropdown_selected_size_name']//span[@class='a-dropdown-prompt']
+${dropdown_small}           //a[.='Small']
+${dropdown_size_5}       //a[.='5']
 ${select_amount}            xpath=//span[@class='a-dropdown-label']
 ${select_amount_2}          css=#quantity_1
 ${select_amount_1}          css=#quantity_0
@@ -38,5 +36,3 @@ ${cart}                     css=#hlb-view-cart-announce
 ${amount_reduce}            css=#a-autoid-2-announce
 ${dropdown}                 css=#dropdown1_1
 ${check_out}                xpath=//input[@name='proceedToRetailCheckout']
-
-
