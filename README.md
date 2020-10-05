@@ -1,7 +1,7 @@
 Structure Folder
 ================
 
-**Browser**
+**Browser** <br/>
   Folder that contains web browser driver.
   Webdriver available are google chrome, mozilla firefox, edge and internet explorer.
 
