@@ -5,9 +5,9 @@ Resource            ../Resource/PageObject/login.robot
 Resource            ../Resource/PageObject/homepage.robot
 Suite Setup         Begin web test
 Suite Teardown      End web test
-Documentation       Pomona amazon web test
-...                 Change directory to Robot-Framework-Pomona
-...                 Run "robot -d Results --variable BROWSER:gc test/Pomona.robot" to run in chrome browser
+Documentation       AmazonJourney
+...                 Change directory to Robot Framework
+...                 Run "robot -d Results --variable BROWSER:gc test/AmazonJourney.robot" to run in chrome browser
 
 *** Variable ***
 ${BROWSER}  gc
