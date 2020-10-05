@@ -1,18 +1,21 @@
 Structure Folder
 ================
 
-**Browser** <br/>
+Browser
+-------------
   Folder that contains web browser driver.
   Webdriver available are google chrome, mozilla firefox, edge and internet explorer.
 
-**Resource**
+Resource
+-------------
   Folder that contains resource for running testcase.
 
   In resource folder There are 2 folder common and page object.
   common folder contain keyword that used in other .robot files.
   Page object folder contain user predefined keyword.
 
-**Results**
+Results
+-------------
   Folder that contains report after running testcase.
 
   There are 3 files generated after running test cases
@@ -20,7 +23,8 @@ Structure Folder
   `output.xml` contain steps that run during execution.
   `report.html` this file reporting results after running testcases.
   
-**Test**
+Tests
+-------------
   Folder that contains test cases.
 
 Testcase
